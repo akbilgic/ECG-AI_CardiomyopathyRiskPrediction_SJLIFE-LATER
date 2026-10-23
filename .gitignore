@@ -1,0 +1,36 @@
+# Local environments, build caches and editor files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+
+# Research inputs and outputs must stay outside the public repository.
+data/
+private/
+outputs/
+*.npy
+*.npz
+*.csv
+*.tsv
+*.xml
+*.dcm
+*.edf
+*.hea
+*.dat
+*.parquet
+*.xlsx
+*.sas7bdat
+*.pkl
+*.pickle
+*.joblib
+*.log
+
+# Only the reviewed numerical model weights belong in this repository.
+*.h5
+!weights/ecgai_weights.h5

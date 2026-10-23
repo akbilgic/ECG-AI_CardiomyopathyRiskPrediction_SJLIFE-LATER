@@ -1,0 +1,168 @@
+{
+  "release_version": "1.0.0",
+  "weights_file": "ecgai_weights.h5",
+  "weights_sha256": "35625d728982e925d4eccbcbc828f6d6b2213fac909d887cc98983c79f107d05",
+  "weights_bytes": 56221696,
+  "source_checkpoint_sha256": "258a7fa68a478847d2949bdfc2bd2942663d449b18097e36167a2d84951d9c64",
+  "export": "Unchanged numerical layer weights only; optimizer and training configuration excluded.",
+  "input_shape": [
+    null,
+    5000,
+    12
+  ],
+  "parameters": 14048513,
+  "output": "Uncalibrated sigmoid ECG-AI score; not absolute five-year risk.",
+  "weights_format": "Keras 2 legacy HDF5 numerical weights, loaded into the explicitly defined architecture.",
+  "weight_tensors": [
+    {
+      "name": "conv_1/kernel:0",
+      "shape": [
+        5,
+        12,
+        256
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "conv_1/bias:0",
+      "shape": [
+        256
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "group_norm_1/gamma:0",
+      "shape": [
+        256
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "group_norm_1/beta:0",
+      "shape": [
+        256
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "conv_2/kernel:0",
+      "shape": [
+        11,
+        256,
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "conv_2/bias:0",
+      "shape": [
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "group_norm_2/gamma:0",
+      "shape": [
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "group_norm_2/beta:0",
+      "shape": [
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "conv_3/kernel:0",
+      "shape": [
+        21,
+        512,
+        1024
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "conv_3/bias:0",
+      "shape": [
+        1024
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "group_norm_3/gamma:0",
+      "shape": [
+        1024
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "group_norm_3/beta:0",
+      "shape": [
+        1024
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "attention_logits/kernel:0",
+      "shape": [
+        1,
+        1024,
+        1024
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "attention_logits/bias:0",
+      "shape": [
+        1024
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "embedding/kernel:0",
+      "shape": [
+        1024,
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "embedding/bias:0",
+      "shape": [
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "embedding_group_norm/gamma:0",
+      "shape": [
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "embedding_group_norm/beta:0",
+      "shape": [
+        512
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "ecgai_score/kernel:0",
+      "shape": [
+        512,
+        1
+      ],
+      "dtype": "float32"
+    },
+    {
+      "name": "ecgai_score/bias:0",
+      "shape": [
+        1
+      ],
+      "dtype": "float32"
+    }
+  ]
+}

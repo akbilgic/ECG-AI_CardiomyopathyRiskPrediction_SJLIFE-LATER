@@ -1,0 +1,6 @@
+# Tested modern inference environment: Python 3.11.
+tensorflow==2.21.0
+keras==3.13.2
+numpy==2.4.4
+scipy==1.17.1
+h5py==3.14.0

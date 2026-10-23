@@ -1,0 +1,7 @@
+# Alternative tested legacy inference environment: Python 3.11.
+# Install this file INSTEAD OF requirements.txt, in a separate environment.
+tensorflow==2.15.0
+keras==2.15.0
+numpy==1.26.4
+scipy==1.17.1
+h5py==3.9.0
